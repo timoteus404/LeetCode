@@ -4,19 +4,36 @@ import java.util.HashMap;
 
 public class longestPalindrome {
 
-    public String longestPalindrome(String s){
+    public static String longestPalindrome(String s){
+        //babad -> bab || aba
+        int first = 0;
+        int second = 1;
+        int counter =0;
 
-        int i =0;
-        int j =0;
-        HashMap<Integer, String> resultSet = new HashMap<>();
+        StringBuilder value = new StringBuilder();
+        HashMap<Integer, StringBuilder> resultSet = new HashMap<>();
 
-        StringBuilder sb = new StringBuilder(s);
+        if(s.length() == 1){
+            return s;
+        }
 
-        while(j )
+        //babad -> bab || aba
+        for(; first < s.length(); first++) {
 
+            for (; second <= s.length(); second++) {
+                value.append(s.charAt(first));
+                value.append(s.charAt(second));
+                counter++;
 
+                if (value == value.reverse()) {
+                    resultSet.put(counter, value);
+                    counter = 0;
+                    value.setLength(0);
+                }
 
-
-
+            }
+        }
+        String a = value.toString();
+        return a;
     }
 }
