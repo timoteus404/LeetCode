@@ -1,5 +1,10 @@
 package com.company;
+//Runtime: 100.00%
+//Memory:  64.52%
 
+//two pointer approach with i(slow) & j(fast)
+//loop breaks when i+j==target || i == last index of array
+//i(slow) pointer increments only when j == last index
 public class TwoSum {
 
     public static int[] twoSum(int[] nums, int target){

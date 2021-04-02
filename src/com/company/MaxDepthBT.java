@@ -1,23 +1,10 @@
 package com.company;
-class TreeNode{
-    int val;
-    TreeNode left;
-    TreeNode right;
+//Runtime: 100.00%
+//Memory:  20.00%
 
-    public TreeNode() {
-    }
-
-    public TreeNode(int val) {
-        this.val = val;
-    }
-
-    public TreeNode(int val, TreeNode left, TreeNode right) {
-        this.val = val;
-        this.left = left;
-        this.right = right;
-    }
-}
-
+//recursive approach
+//counting left nodes && right nodes
+//checking the max of the node and adding root to it
 public class MaxDepthBT {
 
     public int maxDepth(TreeNode root){
@@ -31,5 +18,24 @@ public class MaxDepthBT {
             return 1+Math.max(left, right);
         }
 
+    }
+
+    class TreeNode{
+        int val;
+        TreeNode left;
+        TreeNode right;
+
+        public TreeNode() {
+        }
+
+        public TreeNode(int val) {
+            this.val = val;
+        }
+
+        public TreeNode(int val, TreeNode left, TreeNode right) {
+            this.val = val;
+            this.left = left;
+            this.right = right;
+        }
     }
 }

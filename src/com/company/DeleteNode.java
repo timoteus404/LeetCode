@@ -1,5 +1,7 @@
 package com.company;
 
+//Runtime: 100.00%
+//Memory:  41.64%
 public class DeleteNode {
 
     public void deleteNode(ListNode node){

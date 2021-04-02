@@ -1,5 +1,10 @@
 package com.company;
+//Runtime: 95.28%
+//Memory:  97.24%
 
+//i starts from the 0  index
+//j starts from last index
+//loops ends when they meet in the middle
 public class ReverseString {
 
     public static char[] reverseString(char[] s){
@@ -17,7 +22,6 @@ public class ReverseString {
             }
             i++;
             j--;
-
         }
         return s;
     }

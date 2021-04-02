@@ -1,7 +1,11 @@
 package com.company;
 
 import java.util.HashMap;
+//Runtime: 64.15%
+//Memory:  93.06%
 
+//pointer approach
+//
 public class longestPalindrome {
 
     public static String longestPalindrome(String s){
