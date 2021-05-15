@@ -10,6 +10,7 @@ public class ReverseStringWord {
         //after each loop append additional " " to Stringbuilder to separate the words
         //use toString to return String.
 
+
         String[] array = word.split(" ");
         StringBuilder result = new StringBuilder();
 
