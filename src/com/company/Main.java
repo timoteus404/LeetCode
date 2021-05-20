@@ -8,9 +8,9 @@ public class Main {
 
         int[] nums = {4, 5, 0, 15, 6};
 
-        var j = AddElementToAnyGivenPosition.addElementToAnyGivenPosition(nums, 1,8);
+        DuplicateZero.duplicateZero(nums);
 
-        for(int i:j){
+        for(int i:nums){
             System.out.print(i + " ");
         }
     }
