@@ -14,6 +14,7 @@ public class AreAlmostEqual {
             return true;
         }
 
+
         StringBuilder y = new StringBuilder(s1);
         StringBuilder x = new StringBuilder(s2);
 
